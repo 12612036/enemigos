@@ -2,9 +2,9 @@
 #include <iostream>
 
 #define FILAS 13
-#define COLUMNAS 13
-#define ANCHOIMAGEN 64
-#define ALTOIMAGEN 64
+#define COLUMNAS 13 // 
+#define ANCHOIMAGEN 64 //ancho del bloque 
+#define ALTOIMAGEN 64 //altura del bloque 
 #define HABILIDADES 7
 
 enum EElementos {
