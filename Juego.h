@@ -24,24 +24,20 @@ namespace Bomberman {
 		Bitmap^ bmpExplosion = gcnew Bitmap("Imagenes\\explosion.png");
 		Bitmap^ bmpHabilidad = gcnew Bitmap("Imagenes\\habilidades.png");
 		Bitmap^ bmpEnemigo = gcnew Bitmap("Imagenes\\enemigos.png");
-	public:
-
-	/*public:
-		   Bitmap^ bmpEnemigo = gcnew Bitmap("Imagenes\\enemigos.png");
-	       Bitmap^ bmpEnemigo = gcnew Bitmap("Imagenes\\enemigos2.png");
-		   Bitmap^ bmpEnemigo = gcnew Bitmap("Imagenes\\enemigos1.png")*/;
+		
 		Juego(void)
 		{
 			bmpJugador->MakeTransparent(bmpJugador->GetPixel(0, 0));
 			bmpBomba->MakeTransparent(bmpBomba->GetPixel(0, 0));
 			InitializeComponent();
-			//TODO: agregar código de constructor aquí
+			//
+			//TODO: agregar cÃ³digo de constructor aquÃ­
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se estén usando.
+		/// Limpiar los recursos que se estÃ©n usando.
 		/// </summary>
 		~Juego()
 		{
@@ -54,14 +50,14 @@ namespace Bomberman {
 	private: System::ComponentModel::IContainer^ components;
 	private:
 		/// <summary>
-		/// Variable del diseñador necesaria.
+		/// Variable del diseÃ±ador necesaria.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
+		/// MÃ©todo necesario para admitir el DiseÃ±ador. No se puede modificar
+		/// el contenido de este mÃ©todo con el editor de cÃ³digo.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -78,7 +74,7 @@ namespace Bomberman {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(408, 282);
+			this->ClientSize = System::Drawing::Size(342, 316);
 			this->Name = L"Juego";
 			this->Text = L"Juego";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
@@ -133,9 +129,5 @@ namespace Bomberman {
 			break;
 		}
 	}
-	private: System::Void dateTimePicker1_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
-	}
-private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-};
+	};
 }
