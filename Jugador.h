@@ -24,6 +24,7 @@ class CJugador {
 	int dy;	// desplazamiento en y
 	int indiceX;
 	int indiceY;
+	int vidas; // Nueva variable para almacenar las vidas del jugador
 	EDireccion ultimaTecla;
 	EDireccion direccion;
 	Rectangle limiteArribaAbajo;
@@ -32,22 +33,22 @@ class CJugador {
 public:
 	CJugador();
 	~CJugador();
-	
+	//
+	int bombasMaximas; // Variable para almacenar el número de bombas permitidas
+	int bombasColocadas;
+
 	CJugador(int x, int y);
-	void setDx(int dx) {
-		this->dx = dx;
-	}
-	void setDy(int dy) {
-		this->dy = dy;
-	}
-	int getX() {
-		return x + 1 * FACTORZOOM;
-	}
-	int getY() {
-		return y + 20 * FACTORZOOM + dy;
-	}
+	void setDx(int dx);	
+	void setDy(int dy);
+	int getX();
+	int getY();
+	void setVidas(int vidas);
 	void dibujar(Graphics^ g, Bitmap^ bmpJugador, const CanchaArray& cancha);
 	void mover(Graphics^ g, Bitmap^ bmpJugador, const CanchaArray& cancha);
 	void setDireccion(EDireccion direccion);
 	void controlarLimitesMovimiento(const CanchaArray& cancha);
+	
+	void aumentarVida();  // Método para aumentar vida
+	int getVidas();       // Método para obtener la cantidad de vidas
+	void ReducirVida();   // Método para reducir vida
 };
