@@ -13,11 +13,13 @@ private:
 	CColeccionHabilidad* habilidades;
 	CColeccionEnemigo* enemigos;
 	int nivel;
-
+	// Nuevo método para obtener la cantidad de bombas activas
+	/*int getCantidadBombas();*/
 public:
 	CControladora();
 	~CControladora() {};
 
+	void setNivel(int nivel);
 	int getNivel();
 	void inicializar();
 	void Dibujar();
@@ -28,6 +30,22 @@ public:
 	CJugador* getJugador();
 	void crearHabilidades();
 	void crearEnemigos();
+	void aumentarVidaJugador();
+	void reducirVidaJugador();
 	CColeccionHabilidad* getColeccionHabilidades();
 	CColeccionEnemigo* getColeccionEnemigos();
+
+
+	void quitarVidaEnemigo() {
+		for (int i = 0; i < enemigos->getEnemigos().size(); i++) {
+
+		}
+	}
+
+	void quitarVidaExplosion() {
+		for (int i = 0; i < bombas->getBombas().size(); i++) {
+
+		}
+	}
 };
+
