@@ -5,7 +5,7 @@
 using namespace std;
 
 class CColeccionHabilidad {
-	vector<CHabilidad*> habilidades;
+	vector<CHabilidad*> habilidades;	
 
 public:
 	CColeccionHabilidad(){}
